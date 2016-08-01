@@ -1,0 +1,295 @@
+/* ===================================
+    GLOBAL STYLES =========================================================
+=======================================*/
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  font-family: "proxima-nova";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+em {
+  font-style: normal;
+
+}
+
+
+
+
+
+/* ===================================
+    LARGE SCREEN STYLES =========================================================
+=======================================*/
+
+@media only screen and (min-width: 769px) {
+
+      .hero {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        max-height: 100vh;
+      }
+
+      .container {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        display: block;
+
+
+
+
+      }
+
+      video {
+
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+
+        object-fit: cover;
+
+
+
+      }
+
+      .overlay {
+        position: absolute;
+        float: left;
+        background: rgba(45, 181, 255, 0.3);
+        height: 100vh;
+        width: 100%;
+
+      }
+/*
+      .overlay {
+
+
+
+        height: 100vh;
+        width: 100%;
+        max-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: rgba(45, 181, 255, 0.3);
+
+
+
+
+
+
+      }
+      */
+
+
+      .nav {
+        text-align: right;
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        background-color: white;
+
+        opacity: 0.85;
+
+      }
+
+      .nav a {
+        padding-right: 40px;
+        text-decoration: none;
+        color: #0303ff;
+        font-size: 1.1em;
+
+      }
+
+      .navigation {
+        padding-top: 25px;
+      }
+
+      .logo {
+        float: left;
+        font-size: 1.3em;
+        margin-top: 25px;
+        color: #0303ff;
+        font-weight: bold;
+
+      }
+
+/*
+      .title-wrapper {
+
+          position: absolute;
+
+          margin-top: 350px;
+          margin-left: 400px;
+          display: inline;
+
+      }
+
+
+        .title {
+
+          padding: 0;
+          color: white;
+          font-size: 3em;
+
+
+
+
+
+        }
+*/
+
+        .title {
+          position: relative;
+
+          margin: 0 auto;
+          max-width: 75%;
+
+          padding-top: 350px;
+          color: white;
+          font-size: 3em;
+
+        }
+
+          .logo-svg {
+            height: 75px;
+            width: 75px;
+            margin: 0 auto;
+            margin-top: 75px;
+
+            display: block;
+
+
+
+          }
+
+
+
+
+
+
+      .red {
+        color: #f05253;
+      }
+
+      section {
+        display: block;
+        z-index: 200;
+        border: solid 2px red;
+        box-sizing: border-box;
+      }
+
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+
+/* ===================================
+    COLUMNS SETUP! =========================================================
+=======================================*/
+/*
+        /*  SECTIONS  */
+        .section {
+        	clear: both;
+        	padding: 0px;
+        	margin: 0px;
+        }
+
+        /*  COLUMN SETUP  */
+        .col {
+        	display: block;
+        	float:left;
+        	margin: 1% 0 1% 1.6%;
+        }
+        .col:first-child { margin-left: 0; }
+
+        /*  GROUPING  */
+        .group:before,
+        .group:after { content:""; display:table; }
+        .group:after { clear:both;}
+        .group { zoom:1; /* For IE 6/7 */ }
+        /*  GRID OF TWELVE  */
+        .span_12_of_12 {
+        	width: 100%;
+        }
+
+        .span_11_of_12 {
+          	width: 91.53%;
+        }
+        .span_10_of_12 {
+          	width: 83.06%;
+        }
+
+        .span_9_of_12 {
+          	width: 74.6%;
+        }
+
+        .span_8_of_12 {
+          	width: 66.13%;
+        }
+
+        .span_7_of_12 {
+          	width: 57.66%;
+        }
+
+        .span_6_of_12 {
+          	width: 49.2%;
+        }
+
+        .span_5_of_12 {
+          	width: 40.73%;
+        }
+
+        .span_4_of_12 {
+          	width: 32.26%;
+        }
+
+        .span_3_of_12 {
+          	width: 23.8%;
+        }
+
+        .span_2_of_12 {
+          	width: 15.33%;
+        }
+
+        .span_1_of_12 {
+          	width: 6.866%;
+        }
+
+        /*  GO FULL WIDTH BELOW 480 PIXELS */
+        @media only screen and (max-width: 480px) {
+        	.col {  margin: 1% 0 1% 0%; }
+
+            .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+        	width: 100%;
+        	}
+        }
+
+/* ===================================
+  TABLET SIZE STYLES
+ =========================================================
+=======================================*/
+
+/* ===================================
+    SCROLL EFFECTS
+ =========================================================
+=======================================*/
