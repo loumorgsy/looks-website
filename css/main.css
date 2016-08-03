@@ -2,18 +2,28 @@
     GLOBAL STYLES =========================================================
 =======================================*/
 
+html {
+  background: none;
+}
 
 html, body {
   margin: 0;
   padding: 0;
+  background: white;
+
 }
 
+body {
+
+
+
+}
 
 * {
   font-family: "proxima-nova";
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
 
 }
 
@@ -22,6 +32,11 @@ em {
 
 }
 
+a {
+  color: white;
+  text-decoration: none;
+
+}
 
 
 
@@ -31,6 +46,12 @@ em {
 =======================================*/
 
 @media only screen and (min-width: 769px) {
+
+      body {
+        background: white;
+        background-image: url(img/profile-pic.jpg);
+        background-repeat: repeat;
+      }
 
       .hero {
         width: 100%;
@@ -74,7 +95,7 @@ em {
         width: 100%;
 
       }
-/*
+    /*
       .overlay {
 
 
@@ -98,11 +119,12 @@ em {
       .nav {
         text-align: right;
         position: fixed;
-        height: 70px;
+        height: 80px;
         width: 100%;
         background-color: white;
-
-        opacity: 0.85;
+        border-bottom: solid 2px #0303ff;
+        opacity: 0.95;
+        z-index: 100;
 
       }
 
@@ -127,7 +149,7 @@ em {
 
       }
 
-/*
+    /*
       .title-wrapper {
 
           position: absolute;
@@ -150,7 +172,7 @@ em {
 
 
         }
-*/
+  */
 
         .title {
           position: relative;
@@ -176,105 +198,383 @@ em {
 
           }
 
-
-
-
-
-
       .red {
         color: #f05253;
       }
 
-      section {
-        display: block;
-        z-index: 200;
-        border: solid 2px red;
-        box-sizing: border-box;
+      /* ABOUT PART 1 STYLES */
+
+      .about-title {
+        color: #0303ff;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        margin-top: 10%;
       }
 
-}
+        .about img{
+          height: 200px;
+          width: 200px;
+          padding-bottom: 50px;
 
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-}
-.group:after {
-    clear: both;
-}
 
-/* ===================================
-    COLUMNS SETUP! =========================================================
-=======================================*/
-/*
-        /*  SECTIONS  */
-        .section {
-        	clear: both;
-        	padding: 0px;
-        	margin: 0px;
+
         }
 
-        /*  COLUMN SETUP  */
-        .col {
-        	display: block;
-        	float:left;
-        	margin: 1% 0 1% 1.6%;
-        }
-        .col:first-child { margin-left: 0; }
+        .wrapper {
+          width: 70%;
+          display: flex;
+          justify-content: space-around;
+          text-align: center;
+          margin: 0 auto;
 
-        /*  GROUPING  */
+
+
+
+        }
+
+
+
+
+
+        .about {
+          width: 30%;
+            margin: 0 5%;
+            color: #0303ff;
+
+        }
+
+
+        .team-title {
+          color: #0303ff;
+          text-align: center;
+          width: 50%;
+          margin: 0 auto;
+          margin-bottom: 10%;
+          margin-top: 10%;
+        }
+
+        .team img {
+          height: 300px;
+          width: 300px;
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-bottom: 100px;
+
+        }
+
+        .team-wrapper {
+          width: 70%;
+          margin: 0 auto;
+        }
+
+        .team {
+
+
+          display: flex;
+          justify-content: center;
+          margin:
+
+
+        }
+
+        .photo-grid {
+	margin: 1em auto;
+	max-width: 1106px;
+	text-align: center;
+
+}
+
+.photo-grid li {
+
+	display: inline-block;
+	margin: 1em;
+	width: 289px;
+}
+
+.photo-grid img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+
+}
+
+.photo-grid figure {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+}
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+  padding-top: 50px;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.photo-grid figcaption p {
+	display: block;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	vertical-align: middle;
+}
+
+
+
+
+
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+
+.photo-grid img {
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+}
+
+.photo-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
+
+
+
+.modal::before {
+content: '';
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+margin: 0;
+}
+
+.target {
+display: block;
+left: 0;
+position: fixed;
+top: 0;
+width: 0;
+height: 0;
+visibility: hidden;
+pointer-events: none;
+}
+
+.modal {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+z-index: 100;
+text-align: center;
+display: none;
+/* Fallback for legacy browsers */
+background-color: rgba(0,0,0,0.6);
+}
+.modal > .content {
+text-align: left;
+display: inline-block;
+background-color: white;;
+box-sizing: border-box;
+color: #0303ff;
+position: relative;
+width: 500px;
+padding: 20px;
+}
+
+.modal > .content .close-btn {
+position: absolute;
+top: 18px;
+right: 18px;
+width: 15px;
+height: 15px;
+color: #0303ff;
+font-size: 18px;
+text-decoration: none;
+}
+
+/* Behaviour on legacy browsers */
+.target:target + .modal {
+display: block;
+}
+
+/* Fallback for IE8 */
+.modal.is-expanded {
+display: block;
+}
+.modal.is-expanded > .content {
+top: 50%;
+margin-top: -45px;
+}
+
+/* Making main page blurred when modal window open */
+:root .target:target ~ .page-container {
+filter: blur(5px);
+-webkit-filter: blur(5px);
+filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='blur5'><feGaussianBlur in='SourceGraphic' stdDeviation='5' /></filter></svg>#blur5"); // for Firefox
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+}
+:root span[id="start"]:target ~ .page-container {
+filter: none;
+-webkit-filter: none;
+}
+
+/* Behavior on modern browsers */
+:root .modal {
+display: block;
+background-color: transparent;
+transition: transform 0.3s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+transform-origin: center center;
+transform: scale(0, 0);
+}
+:root .modal > .content {
+box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+:root .target:target + .modal {
+transform: scale(1, 1);
+}
+
+
+
+
+
         .group:before,
-        .group:after { content:""; display:table; }
-        .group:after { clear:both;}
-        .group { zoom:1; /* For IE 6/7 */ }
-        /*  GRID OF TWELVE  */
-        .span_12_of_12 {
-        	width: 100%;
+        .group:after {
+            content: "";
+            display: table;
+        }
+        .group:after {
+            clear: both;
         }
 
-        .span_11_of_12 {
-          	width: 91.53%;
-        }
-        .span_10_of_12 {
-          	width: 83.06%;
-        }
+      /* ===================================
+          COLUMNS SETUP! =========================================================
+      =======================================*/
+      /*
+              /*  SECTIONS  */
+              .section {
+              	clear: both;
+              	padding: 0px;
+              	margin: 0px;
+              }
 
-        .span_9_of_12 {
-          	width: 74.6%;
-        }
+              /*  COLUMN SETUP  */
+              .col {
+              	display: block;
+              	float:left;
+              	margin: 1% 0 1% 1.6%;
+              }
+              .col:first-child { margin-left: 0; }
 
-        .span_8_of_12 {
-          	width: 66.13%;
-        }
+              /*  GROUPING  */
+              .group:before,
+              .group:after { content:""; display:table; }
+              .group:after { clear:both;}
+              .group { zoom:1; /* For IE 6/7 */ }
+              /*  GRID OF TWELVE  */
+              .span_12_of_12 {
+              	width: 100%;
+              }
 
-        .span_7_of_12 {
-          	width: 57.66%;
-        }
+              .span_11_of_12 {
+                	width: 91.53%;
+              }
+              .span_10_of_12 {
+                	width: 83.06%;
+              }
 
-        .span_6_of_12 {
-          	width: 49.2%;
-        }
+              .span_9_of_12 {
+                	width: 74.6%;
+              }
 
-        .span_5_of_12 {
-          	width: 40.73%;
-        }
+              .span_8_of_12 {
+                	width: 66.13%;
+              }
 
-        .span_4_of_12 {
-          	width: 32.26%;
-        }
+              .span_7_of_12 {
+                	width: 57.66%;
+              }
 
-        .span_3_of_12 {
-          	width: 23.8%;
-        }
+              .span_6_of_12 {
+                	width: 49.2%;
+              }
 
-        .span_2_of_12 {
-          	width: 15.33%;
-        }
+              .span_5_of_12 {
+                	width: 40.73%;
+              }
 
-        .span_1_of_12 {
-          	width: 6.866%;
-        }
+              .span_4_of_12 {
+                	width: 32.26%;
+              }
 
+              .span_3_of_12 {
+                	width: 23.8%;
+              }
+
+              .span_2_of_12 {
+                	width: 15.33%;
+              }
+
+              .span_1_of_12 {
+                	width: 6.866%;
+              }
+
+
+}
         /*  GO FULL WIDTH BELOW 480 PIXELS */
         @media only screen and (max-width: 480px) {
         	.col {  margin: 1% 0 1% 0%; }
