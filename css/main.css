@@ -2,21 +2,13 @@
     GLOBAL STYLES =========================================================
 =======================================*/
 
-html {
-  background: none;
-}
-
 html, body {
   margin: 0;
   padding: 0;
-  background: white;
-
 }
 
 body {
-
-
-
+  background: url("img/geometry_@2X.png");
 }
 
 * {
@@ -46,12 +38,6 @@ a {
 =======================================*/
 
 @media only screen and (min-width: 769px) {
-
-      body {
-        background: white;
-        background-image: url(img/profile-pic.jpg);
-        background-repeat: repeat;
-      }
 
       .hero {
         width: 100%;
